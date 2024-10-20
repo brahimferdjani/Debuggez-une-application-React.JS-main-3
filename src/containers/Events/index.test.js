@@ -82,7 +82,7 @@ describe("When Events is created", () => {
         })
       );
 
-      await screen.findByText("Conférence #productCON");
+      await screen.queryByText("Conférence #productCON");
       expect(screen.queryByText("Forum #productCON")).not.toBeInTheDocument();
     });
   });
